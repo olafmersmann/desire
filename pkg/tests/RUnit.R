@@ -5,7 +5,7 @@
 ## turn is based on code from the 'gdata' package.
 ##
 
-pkg <- "emoa"
+pkg <- "desire"
 
 if (require("RUnit", quietly=TRUE)) {
   wd <- getwd()

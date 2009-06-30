@@ -4,7 +4,7 @@
 ## Based on code taken from the fBasics package.
 ##
 
-pkg <- "emoa"
+pkg <- "desire"
 
 if (require("RUnit", quietly = TRUE)) {
   library(package=pkg, character.only = TRUE)
