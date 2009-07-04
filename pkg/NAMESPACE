@@ -130,3 +130,9 @@ S3method(meanDI, matrix)
 S3method(meanDI, array)
 S3method(meanDI, desire.function)
 S3method(meanDI, composite.desire.function)
+
+## normal.R
+export(normMin, normMax, normTarget)
+S3method(ddesire, normMin)
+S3method(ddesire, normMax)
+S3method(ddesire, normTarget)
