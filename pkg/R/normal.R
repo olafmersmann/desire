@@ -126,12 +126,12 @@ ddesire.normTarget <- function(x, f, mean=0, sd=1) {
 
 pdesire.normTarget <- function(q, f, mean, sd) {
   fun <- function(u) {
-    yl <- uniroot(function(z) d(z) - u, c(-Inf, T))
-    yr <- uniroot(function(z) d(z) - u, c(T, Inf))
+    yl <- uniroot(function(z) f(z) - u, c(-Inf, T))
+    yr <- uniroot(function(z) f(z) - u, c(T, Inf))
     if (u <= 0 || u >= 0.9722) {
       return(0)
     } else {
-      l <- pnrom(yl, mean, sd)
+      l <- pnorm(yl, mean, sd)
       r <- 1 - pnorm(yr, mean, sd)
       return(l + r)
     }
