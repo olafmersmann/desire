@@ -7,7 +7,7 @@ Author:
   and Detlef Steuer <detlef.steuer@hsu-hamburg.de>
   and Olaf Mersmann <olafm@statistik.tu-dortmund.de>
 Maintainer: Olaf Mersmann <olafm@statistik.tu-dortmund.de>
-Depends: R (>= 2.8.0), loglognorm
+Depends: R (>= 2.9.0), loglognorm
 License: GPL-2
 URL: http://git.datensplitter.net/cgit/desire/
 LazyData: yes
