@@ -19,7 +19,6 @@ dsplot(expr, f, from = NULL, to = NULL, n = 101, show.zero = TRUE, interest = NU
   \item{sub}{a subtitle for the plot}
   \item{\dots}{parameters passed to low level plot functions}
 }
-\references{}
 \author{
   Heike Trautmann \email{trautmann@statistik.tu-dortmund.de},
   Detlef Steuer \email{steuer@hsu-hamburg.de} and
