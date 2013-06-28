@@ -2,7 +2,7 @@
 \alias{dsplot}
 \title{Desirability Plot}
 \description{
-  TBD
+  Plot a desirability function and its relation to an arbitrary expression.
 }
 \usage{
 dsplot(expr, f, from = NULL, to = NULL, n = 101,

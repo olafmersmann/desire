@@ -2,7 +2,7 @@
 \alias{plot.desire.function}
 \title{Plot curve of desirability function}
 \description{
-  TBD
+  Plot a desirability function.
 }
 \usage{
 \method{plot}{desire.function}(x, n = 600, xlim = NULL, ylim = c(0, 1),
