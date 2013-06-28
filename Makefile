@@ -10,7 +10,7 @@ check: clean
 	R CMD check pkg && rm -fR pkg.Rcheck
 
 clean:
-	rm -fR pkg/src/*.o pkg/src/*.so pkg.Rcheck
+	rm -fR pkg/src/*.o pkg/src/*.so pkg.Rcheck pkg/src/symbols.rds
 
 pkg: clean 
 	echo "Date: $(date +%Y-%m-%d)" >> pkg/DESCRIPTION

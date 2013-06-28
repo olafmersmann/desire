@@ -1,13 +1,9 @@
 Package: desire
-Version: 1.0.5
-Title: Desirability functions
+Version: 1.0.6
+Title: Desirability functions in R
 Description: Harrington and Derringer-Suich type desirability functions
-Author:
-  Heike Trautmann <trautmann@statistik.tu-dortmund.de>
-  and Detlef Steuer <detlef.steuer@hsu-hamburg.de>
-  and Olaf Mersmann <olafm@statistik.tu-dortmund.de>
-Maintainer: Olaf Mersmann <olafm@statistik.tu-dortmund.de>
+Author: Heike Trautmann, Detlef Steuer and Olaf Mersmann
+Maintainer: Olaf Mersmann <olafm@p-value.net>
 Depends: R (>= 2.9.0), loglognorm
 License: GPL-2
-URL: http://git.datensplitter.net/cgit/desire/
 LazyData: yes

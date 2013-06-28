@@ -5,7 +5,9 @@
   TBD
 }
 \usage{
-dsplot(expr, f, from = NULL, to = NULL, n = 101, show.zero = TRUE, interest = NULL, main = "Desirability Plot", sub = NULL, ...)
+dsplot(expr, f, from = NULL, to = NULL, n = 101,
+       show.zero = TRUE, interest = NULL,
+       main = "Desirability Plot", sub = NULL, ...)
 }
 \arguments{
   \item{expr}{an expression written as a function of 'x', or alternatively
