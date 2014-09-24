@@ -17,7 +17,7 @@
 #endif
 
 #define UNPACK_REAL_VECTOR(S, D, N)		\
-  double *D = REAL(S);				\
+  double *D = REAL(S);	        			\
   const R_len_t N = length(S);
 
 /*
