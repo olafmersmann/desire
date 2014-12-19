@@ -4,3 +4,4 @@
 ^paper
 ^src/.*\.o
 ^src/.*\.so
+.clang-format
