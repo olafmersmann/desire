@@ -1,5 +1,5 @@
 Package: desire
-Version: 1.0-7.6
+Version: 1.0.8
 Title: Desirability functions in R
 Description: Harrington and Derringer-Suich type desirability functions
         for R.
@@ -9,6 +9,6 @@ Authors@R: c( person("Olaf", "Mersmann", email="olafm@p-value.net",
 URL: https://github.com/olafmersmann/desire
 BugReports: https://github.com/olafmersmann/desire/issues
 Maintainer: Olaf Mersmann <olafm@p-value.net>
-Depends: R (>= 3.0.0), loglognorm
+Depends: R (>= 4.1.0), loglognorm
 License: GPL-2
 LazyData: yes
