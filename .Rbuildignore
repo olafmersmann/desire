@@ -1,7 +1,7 @@
 ^dist
-^do
 ^examples
 ^paper
 ^src/.*\.o
 ^src/.*\.so
 .clang-format
+.github/

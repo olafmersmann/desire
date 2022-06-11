@@ -39,7 +39,7 @@ derringerSuich <- function(y, d, beta) {
   beta <- as.numeric(beta)
   
   ev <- function(x, ...)
-    .Call("ds_eval", x, y, d, beta)
+    .Call(ds_eval, x, y, d, beta)
   
   n <- length(y)
   if (length(d) != n)
@@ -110,39 +110,39 @@ print.derringerSuich <- function(x, ...) {
 ## Case dsLTU11
 ddesire.dsLTU11 <- function(x, f, mean=0, sd=1) {
   e <- environment(f)
-  .Call("ddsLTU11", x, e$y[1], e$y[2], e$y[3], mean, sd)
+  .Call(ddsLTU11, x, e$y[1], e$y[2], e$y[3], mean, sd)
 }
 
 pdesire.dsLTU11 <- function(q, f, mean=0, sd=1) {
   e <- environment(f)
-  .Call("pdsLTU11", q, e$y[1], e$y[2], e$y[3], mean, sd)
+  .Call(pdsLTU11, q, e$y[1], e$y[2], e$y[3], mean, sd)
 }
 
 edesire.dsLTU11 <- function(f, mean=0, sd=1) {
   e <- environment(f)
-  .Call("edsLTU11", e$y[1], e$y[2], e$y[3], mean, sd)
+  .Call(edsLTU11, e$y[1], e$y[2], e$y[3], mean, sd)
 }
 
 ## Case dsITU11
 edesire.dsITU11 <- function(f, mean=0, sd=1) {
   e <- environment(f)
-  .Call("edsA1", e$y, c(1, 1, 0), mean, sd);
+  .Call(edsA1, e$y, c(1, 1, 0), mean, sd);
 }
   
 ## Case dsLTI11
 ddesire.dsLTI11 <- function(x, f, mean=0, sd=1) {
   e <- environment(f)
-  .Call("ddsLTI11", x, e$y[1], e$y[2], mean, sd)
+  .Call(ddsLTI11, x, e$y[1], e$y[2], mean, sd)
 }
 
 pdesire.dsLTI11 <- function(q, f, mean=0, sd=1) {
   e <- environment(f)
-  .Call("pdsLTI11", q, e$y[1], e$y[2], mean, sd)
+  .Call(pdsLTI11, q, e$y[1], e$y[2], mean, sd)
 }
 
 edesire.dsLTI11 <- function(f, mean=0, sd=1) {
   e <- environment(f)
-  .Call("edsLTI11", e$y[1], e$y[2], mean, sd)
+  .Call(edsLTI11, e$y[1], e$y[2], mean, sd)
 }
 
 ## Case dsA1
@@ -158,5 +158,5 @@ edesire.dsLTI11 <- function(f, mean=0, sd=1) {
 
 edesire.dsA1 <- function(f, mean=0, sd=1) {
   e <- environment(f)
-  .Call("edsA1", e$y, e$d, mean, sd);
+  .Call(edsA1, e$y, e$d, mean, sd);
 }

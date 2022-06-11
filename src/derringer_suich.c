@@ -8,9 +8,9 @@
  */
 
 #include <R.h>
-#include <Rmath.h>
-#include <Rinternals.h>
 #include <R_ext/Applic.h>
+#include <Rinternals.h>
+#include <Rmath.h>
 
 #ifndef MAX
 #define MAX(A, B) ((A > B) ? (A) : (B))
@@ -391,4 +391,21 @@ SEXP edsA1(SEXP s_y, SEXP s_d, SEXP s_mean, SEXP s_sd) {
   }
   UNPROTECT(1); /* s_res */
   return s_res;
+}
+
+static const R_CallMethodDef callMethods[] = {
+    {"ds_eval", (DL_FUNC)&ds_eval, 4},
+    {"ddsLTU11", (DL_FUNC)&ddsLTU11, 6},
+    {"pdsLTU11", (DL_FUNC)&pdsLTU11, 6},
+    {"edsLTU11", (DL_FUNC)&pdsLTU11, 5},
+    {"ddsLTI11", (DL_FUNC)&ddsLTU11, 5},
+    {"pdsLTI11", (DL_FUNC)&pdsLTU11, 5},
+    {"edsLTI11", (DL_FUNC)&pdsLTU11, 4},
+    {"edsA1", (DL_FUNC)&pdsLTU11, 4},
+    {NULL, NULL, 0}};
+
+void R_init_desire(DllInfo *info) {
+  R_registerRoutines(info, NULL, callMethods, NULL, NULL);
+  R_useDynamicSymbols(info, FALSE);
+  R_forceSymbols(info, TRUE);
 }

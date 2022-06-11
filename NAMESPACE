@@ -1,7 +1,19 @@
-useDynLib(desire)
+useDynLib(desire,
+ds_eval,
+ddsLTU11,
+pdsLTU11,
+edsLTU11,
+ddsLTI11,
+pdsLTI11,
+edsLTI11,
+edsA1
+)
 
 ## Imports:
 importFrom(loglognorm, dloglognorm, ploglognorm, qloglognorm, rloglognorm, eloglognorm, vloglognorm)
+
+importFrom(graphics, abline, axis, box, layout, lines, mtext, par, plot.new, plot.window, segments, title)
+importFrom(stats, dnorm, formula, integrate, optimize, pnorm, predict, qnorm, quantile, rnorm, uniroot, var)
 
 ## dfun.R
 export(ddesire)
